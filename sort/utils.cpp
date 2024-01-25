@@ -3,7 +3,7 @@
 
 using namespace std;
 
-void fill_array(int array[], int lenght)
+void fill_array(int *array, int lenght)
 {
     srand((unsigned)(time(NULL)));
     for (int i = 0; i < lenght; i++)
@@ -12,7 +12,7 @@ void fill_array(int array[], int lenght)
     }
 }
 
-void selection_sort(int array[], int lenght)
+void selection_sort(int *array, int lenght)
 {
     for (int startIndex = 0; startIndex < lenght - 1; ++startIndex)
     {
@@ -25,10 +25,10 @@ void selection_sort(int array[], int lenght)
         swap(array[startIndex], array[smallestIndex]);
     }
 }
-void print_array(int array[], int lenght)
+void print_array(int *array, int lenght)
 {
     for (int i = 0; i < lenght; i++)
     {
-        cout << "\t" << array[i] << endl;
+        cout << i << ".\t" << array[i] << endl;
     }
 }
