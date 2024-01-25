@@ -12,7 +12,7 @@ int main()
     int sequence[3] = {0, 0, 0};
     int arr_1[10] = {1, 0, 0, 3, 4, 6, 8, 5, 4, 99};
     int arr_2[10] = {1, 0, 0, 0, 4, 6, 8, 5, 4, 99};
-    int r_a_s = 100; // random array size
+    int r_a_s = 10; // random array size
     int arr_3[r_a_s];
     fill_array(arr_3, r_a_s);
     cout << boolalpha;
@@ -21,6 +21,8 @@ int main()
     cout << "Random array:\n";
     print_array(arr_3, r_a_s);
     cout << "Found in random array: "<< search_sequence(arr_3, r_a_s, sequence, 3) << endl;
+
+    return 0;
 }
 
 void fill_array(int *array, int lenght)
