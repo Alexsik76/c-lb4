@@ -45,4 +45,12 @@ int main()
     selection_sort(big_array, big_size);
     cout << "Sorted big array:\n";
     print_array(big_array, big_size);
+    int n = 10;
+    int ** arr2 = new int *[n];
+    for( int i = 0; i < n; i++)
+    {
+        arr2[i] = new int[10];
+    }
+    {
+    
 }

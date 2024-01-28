@@ -29,6 +29,6 @@ void print_array(int *array, int lenght)
 {
     for (int i = 0; i < lenght; i++)
     {
-        cout << i << ".\t" << array[i] << endl;
+        cout << i << ".\t" << array[i] ;
     }
 }
